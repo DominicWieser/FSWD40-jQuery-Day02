@@ -6,6 +6,10 @@ $(document).ready(function(){
 	})();
 
 
+function addCart(){
+
+}
+
 		var a = 180;
 		var b = 210;
 		var c = 350;
@@ -15,10 +19,7 @@ $(document).ready(function(){
 		var sum1 = 0;
 		var sum2 = 0;
 		var sum3 = 0;
-		var sum = 0;
-		var x = 0;
-		var y = 0;
-		var z = 0;
+		var sum = [];
 
 		$('#blue').on('click', function(){
 				if(menge < 1){
@@ -27,13 +28,15 @@ $(document).ready(function(){
 					$('#item-quantity1').text(menge)
 
 					sum1 = sum1 + (a * menge);
+					sum += sum1;
 					$('.main-color-text').html(sum1);
 				} else if (menge >= 1){
 					menge += 1;
 					$('#item-quantity1').text(menge);
 					sum1 = (a * menge);
+					sum.push(sum1);
 					$('.main-color-text').html(sum1);
-					x = sum1;
+					
 				}	
 
 		});
@@ -44,13 +47,15 @@ $(document).ready(function(){
 					temp += 1;
 					$('#item-quantity2').text(temp)
 					sum2 = sum2 + (b * temp);
+					sum += sum2;
 					$('.main-color-text').html(sum2);
 				} else if (temp >= 1){
 					temp += 1;
 					$('#item-quantity2').text(temp);
 					sum2 = (b * temp);
+					sum = x + sum2;
 					$('.main-color-text').html(sum2);
-					y = sum2;
+
 				}
 
 				
@@ -68,7 +73,6 @@ $(document).ready(function(){
 					$('#item-quantity3').text(woodTemp);
 					sum3 = (c * woodTemp);
 					$('.main-color-text').text(sum3);
-					z = sum3
 				}
 
 				
