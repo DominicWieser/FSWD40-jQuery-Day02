@@ -4,16 +4,19 @@
 <head>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
-    <title>Intermediate - Exercise</title>
+    <title>Intermediate - Exercise</title>    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
     <nav>
-        <div class="container">
+        <div class="container-fluid">
             <ul class="navbar-left">
                 <li><a href="#">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#store">Store</a></li>
             </ul>
             <!--end navbar-left -->
             <ul class="navbar-right">
@@ -23,40 +26,64 @@
         </div>
         <!--end container -->
     </nav>
-    <div class="container">
+    <div class="container-fluid">
         <div class="shopping-cart">
             <div class="shopping-cart-header">
                 <i class="fa fa-shopping-cart cart-icon"></i><span class="badge">3</span>
                 <div class="shopping-cart-total">
                     <span class="lighter-text">Total:</span>
-                    <span class="main-color-text">$2,229.97</span>
+                    <span class="main-color-text">0 €</span>
                 </div>
             </div>
             <!--end shopping-cart-header -->
             <ul class="shopping-cart-items">
-                <li class="clearfix">
-                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/cart-item1.jpg" alt="item1" />
-                    <span class="item-name">Sony DSC-RX100M III</span>
-                    <span class="item-price">$849.99</span>
-                    <span class="item-quantity">Quantity: 01</span>
-                </li>
-                <li class="clearfix">
-                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/cart-item2.jpg" alt="item1" />
-                    <span class="item-name">KS Automatic Mechanic...</span>
-                    <span class="item-price">$1,249.99</span>
-                    <span class="item-quantity">Quantity: 01</span>
-                </li>
-                <li class="clearfix">
-                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/cart-item3.jpg" alt="item1" />
-                    <span class="item-name">Kindle, 6" Glare-Free To...</span>
-                    <span class="item-price">$129.99</span>
-                    <span class="item-quantity">Quantity: 01</span>
-                </li>
+                
             </ul>
             <a href="#" class="button">Checkout</a>
         </div>
         <!--end shopping-cart -->
-    </div>
+        <div class="row">
+            <div class="col banner">
+                <h1>TechCrunches amazing watches</h1>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <img src="img/6.jpg" alt="Space blue watch" width="242px" height="242px">
+                        <div class="caption">
+                            <h3>Space Blue</h3>
+                            <p>180 €</p>
+                            <p><a href="#" id="blue" class="btn btn-primary" role="button">Add to Cart</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <img src="img/7.jpg" alt="Black Mamba watch" width="242px" height="242px">
+                        <div class="caption">
+                            <h3>Black Mamba</h3>
+                            <p>210 €</p>
+                            <p><a href="#" id="black" class="btn btn-primary" role="button">Add to Cart</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <img src="img/5.jpg" alt="Woody the Woodpecker watch" width="242px" height="242px">
+                        <div class="caption">
+                            <h3>Woody</h3>
+                            <p>350 €</p>
+                            <p><a href="#" id="wood" class="btn btn-primary" role="button">Add to Cart</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
     <!--end container -->
 </body>
 <script src="js/myscript.js" type="text/javascript"></script>
